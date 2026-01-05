@@ -1,0 +1,9 @@
+<h1>Funcionários</h1>
+
+<ul>
+  {% for f in funcionarios %}
+    <li>{{ f.nome }} {{ f.sobrenome }}</li>
+  {% empty %}
+    <li>Nenhum funcionário cadastrado.</li>
+  {% endfor %}
+</ul>
